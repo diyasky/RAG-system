@@ -6,7 +6,7 @@
 https://blog.csdn.net/weixin_43925843/article/details/146398834 修改，改用调用百炼api而非本地llm模型方式，结合RAG对上传文档进行FAISS 索引，通过OpenAI的Python SDK来调用百炼平台上的模型如qwq、deepseek等。
 
 ```
-前端：Gradio交互界面 / FastAPI服务。
+前端：Gradio交互界面。
 
 核心模块：文档加载 → 向量索引 → 检索增强生成。
 
@@ -31,7 +31,6 @@ Rag-System/
 ├─ main.py                    # 多线程加载文档
 ├─ rag.py                     # 文档 检索、回答生成
 ├─ app.py                     # Gradio交互界面
-├─ api.py                     # FastAPI服务端，提供REST接口
 └── ... 其他文件 ...
 ```
 
@@ -42,7 +41,7 @@ Rag-System/
 
 生成模型：deepseek-r1-distill-qwen-1.5b
 
-开发框架：Gradio（快速构建UI）、FastAPI（高性能API服务）。
+开发框架：Gradio（快速构建UI）。
 ```
 
 # 准备
@@ -59,7 +58,7 @@ Rag-System/
 
 ✅启动Gradio界面   python app.py   访问 http://localhost:7860 使用交互界面。
 
-![](fig\\demo.png)
+![](fig/demo.png)
 
 
 
