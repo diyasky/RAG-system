@@ -2,7 +2,8 @@
 
 # 简介
 
-根据https://blog.csdn.net/weixin_43925843/article/details/146398834改用调用百炼api而非本地llm模型方式，结合RAG对上传文档进行FAISS 索引，通过OpenAI的Python SDK来调用百炼平台上的模型如qwq、deepseek等。
+根据
+https://blog.csdn.net/weixin_43925843/article/details/146398834 修改，改用调用百炼api而非本地llm模型方式，结合RAG对上传文档进行FAISS 索引，通过OpenAI的Python SDK来调用百炼平台上的模型如qwq、deepseek等。
 
 ```
 前端：Gradio交互界面 / FastAPI服务。
